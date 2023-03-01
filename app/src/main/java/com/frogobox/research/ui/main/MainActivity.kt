@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import com.frogobox.research.common.base.BaseBindActivity
 import com.frogobox.research.common.delegate.PreferenceDelegates
 import com.frogobox.research.databinding.ActivityMainBinding
+import com.frogobox.simplelibrary.SingleFunc
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -42,6 +43,7 @@ class MainActivity : BaseBindActivity<ActivityMainBinding>() {
         binding.apply {
 
         }
+        SingleFunc.start()
     }
 
     override fun initObserver() {
